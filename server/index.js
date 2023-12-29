@@ -10,7 +10,7 @@ app.use(cors())
 
 dotenv.config()
 
-mongoose.connect(process.env.myDb).then(()=>{
+mongoose.connect(mongodb+srv://prasad:Prasad123@cluster0.41lzfcw.mongodb.net/?retryWrites=true&w=majority).then(()=>{
     console.log('DB is Connected.....')
 }).catch((err)=>{
     console.log(err)
